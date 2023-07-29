@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SERVICES</a></li>
+            </ul>   
+            <img src="images/moon.png" width="30" height="30" id="icon">
+        </nav>
+        <div class="info">
+            <h1>  I'm <span>Shreyasi</span> Karmakar.</h1>
+            <p>
+                This is my portfolio website to showcase my works related to my education.</p>
+            <a href="">HIRE ME.</a>
+        </div>
+        <div class="img-box">
+            <img src="images/yellow-removebg-preview.png" class="shape1">
+            <img src="images/red.png" class="shape">
+            <img src="images/lady.png" class="girl">
+        </div>
+        <div class="social-links">
+            <a href=""><i class="fab fa-linkedin-in"></i></a>
+            <a href=""><i class="fab fa-github"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <script>
+
+        var icon = document.getElementById("icon");
+        icon.onclick = function()
+        {
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "images/sun.png";
+            }else{
+                icon.src = "images/moon.png";
+
+            }
+        }
+    </script>
+</body>
+</html>
